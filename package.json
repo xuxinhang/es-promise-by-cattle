@@ -7,10 +7,10 @@
     "test": "test"
   },
   "scripts": {
-    "test:build": "rollup --config rollup.test.config.js",
-    "test": "npm run build && qunit test/core.bundle.js",
-    "play": "rollup -i playground.js -f cjs | xargs -0 node -e",
-    "build": "rollup -i index.js -f cjs -o index.dist.js"
+	"build:test": "rollup --config rollup.test.config.js",
+    "test": "npm run build && qunit dist/core-test.js",
+    "play": "rollup -i __playground.js -f cjs | xargs -0 node -e",
+    "build": "rollup -i index.js -f cjs -o ./dist/index.js"
   },
   "keywords": [
     "es6",
@@ -20,9 +20,7 @@
   "license": "ISC",
   "devDependencies": {
     "core-js-pure": "^3.1.3",
-    "qunit": "^2.9.2"
-  },
-  "dependencies": {
+    "qunit": "^2.9.2",
     "rollup": "^1.13.0"
   }
 }

@@ -2,5 +2,4 @@ node_modules
 coverage
 co-browser.js
 __*
-*.dist.js
-*.bundle.js
+/dist

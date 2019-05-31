@@ -5,7 +5,7 @@ import './helpers/qunit-helpers';
 const Symbol = GLOBAL.Symbol || {};
 const { setPrototypeOf, create } = Object;
 
-Promise = require('../index.dist.js');
+Promise = require('./index.js');
 
 QUnit.test('Promise', assert => {
   assert.isFunction(Promise);
